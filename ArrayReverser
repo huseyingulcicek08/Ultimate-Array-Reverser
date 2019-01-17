@@ -1,0 +1,10 @@
+import java.util.*;
+class ArrayReverser
+{
+  static String[] reverse(String[] Q)
+  {
+    String R = new StringBuffer(String.join("",Q)).reverse().toString();
+    int[] S = {0};
+    return Arrays.stream(Q).map(V -> R.substring(S[0],S[0] += V.length())).toArray(String[]::new);
+  }
+}
